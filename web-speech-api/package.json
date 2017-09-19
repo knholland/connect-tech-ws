@@ -1,0 +1,11 @@
+{
+  "name": "web-speech-api",
+  "version": "1.0.0",
+  "description": "This has been adapted from [MDN's Speech Color Changer example.](https://github.com/mdn/web-speech-api/tree/master/speech-color-changer)",
+  "main": "app.js",
+  "scripts": {
+    "start": "ENVIRONMENT=local PORT=5000 node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
