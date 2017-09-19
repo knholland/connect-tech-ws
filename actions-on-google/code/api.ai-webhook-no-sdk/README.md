@@ -3,7 +3,10 @@ The purpose of this example is to show you how use advanced webhook/business
 logic without the use of the SDK. This could be helpful because it can show you
 what the sdk is doing under the hood.
 
+You will need [ngrok](https://ngrok.com/).
+
 ## To run this project:
+1. `npm install ngrok -g` (if needed)
 1. Create a new [api.ai project](https://console.api.ai/) and upload the zip file to the project.
 2. `cd actions-on-google-resources/code-examples/api.ai-webhook-no-sdk`
 3. `nvm use`
