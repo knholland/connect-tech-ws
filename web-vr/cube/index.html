@@ -1,0 +1,53 @@
+<!-- Checkout https://aframe.io/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  <script>
+  AFRAME.registerComponent('scale-on-mouseenter', {
+   schema: {
+     to: {default: '2.5 2.5 2.5'}
+   },
+   init: function () {
+     var data = this.data;
+     this.el.addEventListener('mouseenter', function () {
+       this.setAttribute('scale', data.to);
+     });
+   }
+  });
+  </script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+            <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+            <audio id="audio" src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay preload loop></audio>
+        </a-assets>
+
+
+        <a-entity sound="src: #audio"></a-entity>
+
+        <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2" scale-on-mouseenter="to: 2.2 2.2 2.2">
+            <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+            <!-- These animations will start when the box is looked at. -->
+            <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+            <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 4 2"></a-animation>
+            <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+        </a-box>
+
+        <!-- a sky can be 360 video, image, or flat color -->
+        <a-sky color="black"></a-sky>
+        <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
+        <a-light type="ambient" color="#445451"></a-light>
+        <a-light type="point" intensity="2" position="2 4 4"></a-light>
+
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+
+</body>
+</html>

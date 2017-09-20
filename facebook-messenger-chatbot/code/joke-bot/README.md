@@ -2,13 +2,11 @@
 This will walk you through creating a Facebook Messenger bot with a webhook.
 What you see here can be expanded/changed to be the basis for any bot.
 
-We aren't using a NLP layer like api.ai for this example. If you want an
-"intelligent" bot, see the bonus folder.
-
-To do this lab, you will need to setup a test [Facebook Page](https://www.facebook.com/business/products/pages) and a [Facebook App](https://developers.facebook.com/apps/). This
-can all be done using your Facebook account.
-
-You will also need [ngrok](https://ngrok.com/).
+To do this lab, you will need to setup:
+1. a test [Facebook Page](https://www.facebook.com/business/products/pages)
+2. [Facebook App](https://developers.facebook.com/apps/).
+*This can all be done using your Facebook account.*
+3.[ngrok](https://ngrok.com/)
 
 ## Part 1:
 1. `npm install ngrok -g` (if needed)

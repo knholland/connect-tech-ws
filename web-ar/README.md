@@ -7,5 +7,5 @@ Web AR library that can be used on top of A-Frame.
 ## To run:
 1. Open the index.html file in Chrome.
 2. If prompted, allow access to your webcam.
-2. Hold up the Hiro marker (copies available) so your webcam can see it.
+2. Hold up the Hiro marker so your webcam can see it.
 3. You should see a cube appear on top of the Hiro marker.

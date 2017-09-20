@@ -1,5 +1,5 @@
 {
-  "name": "Joke Bot",
+  "name": "joke-bot",
   "version": "1.0.0",
   "description": "Demo Messenger Bot",
   "main": "app.js",

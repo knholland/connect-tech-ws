@@ -35,7 +35,7 @@ function receivedMessage(event) {
     if (message) {
         debug(`User message received: ${message}`);
         sendTextMessage(senderID, config.get('defaultResponse'));
-        sendGenericMessage(senderID);
+        // sendGenericMessage(senderID);
         return;
     } else {
         debug('not a message');
