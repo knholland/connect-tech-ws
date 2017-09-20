@@ -2,19 +2,19 @@
 
 ## Hacking IoT devices with Prepackaged Software
 
-### collection of upcoming and released iot devices
-IOTLIST<http://iotlist.co/>
+### Collection of upcoming and released iot devices
+IOTLIST <http://iotlist.co/>
 
-### sample of connected devices and github repos for your hacking pleasure
-<i>The following devices have preset applications that interface with them, but the open source community have found take a look
-behind the curtain and programatically leverage these and other devices like them outside of their prepackaged software.</i>
+### Sample of connected devices and github repos for your hacking pleasure
+<i>The following devices have preset applications that interface with them, but the open source community have found take a look behind the curtain and programatically leverage these and other devices like them outside of their prepackaged software.</i>
 
-#### device: Fiet HomeBriet A19 <http://www.feit.com/products/bulbs/general-purpose/homebritehomebriteaom800-827-led-hbr/>
-repo: <https://github.com/nkaminski/csrmesh> |
+#### Device: Fiet HomeBriet A19 
+<http://www.feit.com/products/bulbs/general-purpose/homebritehomebriteaom800-827-led-hbr/>
+repo: <https://github.com/nkaminski/csrmesh> 
 <i>Programatically interact with devices that communicated using a "mesh" network. This does not only work with Feit but with any device/group of devices that communicated using the CSRMesh BTLE protocol.</i>
 
 #### device: Logitech Pop: Smart Button Controller <http://www.logitech.com/en-us/product/pop-home-switch>
-repo: https://github.com/brokeh/pophttp |
+repo: https://github.com/brokeh/pophttp 
 <i>Change light settings using http requests.</i>
 
 #### device: SwitchMate<Switchmate: Smart lighting made simple>
